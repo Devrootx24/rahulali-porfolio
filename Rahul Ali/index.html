@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahul Ali — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <!-- Remix Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Devroot<span>.</span>X</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#skills"   class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <!-- Animated background grid -->
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">👋 Welcome to my portfolio</p>
+      <h1 class="hero-title">Hi, I'm<br/><span class="hero-name">Rahul Ali</span></h1>
+      <p class="hero-sub">
+        I'm a <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        I craft pixel-perfect, performant web experiences that drive real results.
+        Let's build something remarkable together.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Hire Me <i class="ri-arrow-right-line"></i></a>
+        <a href="#" class="btn btn-outline" download>Download CV <i class="ri-download-2-line"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Clients</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="profile-ring">
+        <div class="profile-img-wrap">
+          <!-- Placeholder avatar using initials -->
+          <div class="profile-placeholder">
+            <span><img src="images/profile.jpg" height="200px" alt="Pfofile"></span>
+          </div>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="150" cy="150" r="140" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            stroke-dasharray="10 6" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <i class="ri-arrow-down-line"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-img-card">
+            <div class="about-placeholder"><img src="images/my.png" alt=""></div>
+            <div class="about-badge"><i class="ri-code-s-slash-line"></i> 3+ Years Coding</div>
+          </div>
+        </div>
+
+        <div class="about-text-col reveal">
+          <h3 class="about-heading">Passionate Web Developer<br/>Based in India 🇮🇳</h3>
+          <p class="about-body">
+            I'm Rahul Ali, a dedicated frontend-focused web developer with a strong passion
+            for creating beautiful, functional digital experiences. I specialize in building
+            responsive, accessible, and performance-optimized websites for clients worldwide.
+          </p>
+          <p class="about-body">
+            When I'm not writing code, I'm exploring new design trends, contributing to open
+            source, or enjoying a strong cup of chai ☕. I believe great code is both art and
+            engineering.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label">Name</span><span class="info-val">Rahul Ali</span></div>
+            <div class="info-item"><span class="info-label">Email</span><span class="info-val">workwithrahul24@gmail.com</span></div>
+            <div class="info-item"><span class="info-label">Location</span><span class="info-val">India</span></div>
+            <div class="info-item"><span class="info-label">Availability</span><span class="info-val available">Open to Work</span></div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary mt-1">Let's Talk <i class="ri-chat-3-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill bars -->
+        <div class="skills-bars reveal">
+          <h3 class="skills-sub-title">Technical Proficiency</h3>
+
+          <div class="skill-item">
+            <div class="skill-meta"><span>HTML5</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>CSS3 / SASS</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>JavaScript (ES6+)</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Responsive Design</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Git & GitHub</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+        </div>
+
+        <!-- Skill cards -->
+        <div class="skills-cards reveal">
+          <h3 class="skills-sub-title">Tools & Technologies</h3>
+          <div class="skill-cards-grid">
+            <div class="skill-card"><i class="ri-html5-line"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="ri-css3-line"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="ri-javascript-line"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="ri-layout-line"></i><span>Responsive</span></div>
+            <div class="skill-card"><i class="ri-git-branch-line"></i><span>Git</span></div>
+            <div class="skill-card"><i class="ri-github-line"></i><span>GitHub</span></div>
+            <div class="skill-card"><i class="ri-code-box-line"></i><span>VS Code</span></div>
+            <div class="skill-card"><i class="ri-palette-line"></i><span>Figma</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="images p1">
+              <img src="images/Projects1.png" height="200px" alt="E-Commerce Store">
+              <i class="ri-store-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://hilarious-nasturtium-9c4ece.netlify.app/" class="project-link" aria-label="Live Demo"><i class="ri-external-link-line"></i></a>
+              <a href="https://github.com/Devrootx24#" class="project-link" aria-label="GitHub"><i class="ri-github-line"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">E-Commerce Store</h3>
+            <p class="project-desc">A fully responsive online shop with cart functionality, product filtering, and a clean checkout UI. Focused on UX and performance.</p>
+            <div class="project-links">
+              <a href="https://hilarious-nasturtium-9c4ece.netlify.app/" class="project-cta">Live Demo <i class="ri-arrow-right-up-line"></i></a>
+              <a href="#" class="project-cta ghost">GitHub <i class="ri-github-line"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="images p2">
+              <img src="images/projects2.png" height="200px" alt="Task Manager WebApp">
+              <i class="ri-task-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://snazzy-wisp-b80662.netlify.app/" class="project-link" aria-label="Live Demo"><i class="ri-external-link-line"></i></a>
+              <a href="https://github.com/Devrootx24/FlowBoard-Task-Manager.git" class="project-link" aria-label="GitHub"><i class="ri-github-line"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Task Manager WebApp</h3>
+            <p class="project-desc">A Kanban-style task management app with drag-and-drop, local storage persistence, priority labels, and dark/light mode toggle.</p>
+            <div class="project-links">
+              <a href="https://snazzy-wisp-b80662.netlify.app/" class="project-cta">Live Demo <i class="ri-arrow-right-up-line"></i></a>
+              <a href="https://github.com/Devrootx24/FlowBoard-Task-Manager.git" class="project-cta ghost">GitHub <i class="ri-github-line"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="images p3">
+              <img src="images/projects3.png" height="250px" alt="">
+              <i class="ri-weather-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://imaginative-sawine-34210b.netlify.app/" class="project-link" aria-label="Live Demo"><i class="ri-external-link-line"></i></a>
+              <a href="https://github.com/Devrootx24/Aether-Weather.git" class="project-link" aria-label="GitHub"><i class="ri-github-line"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">API</span>
+            </div>
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-desc">A real-time weather app consuming the OpenWeather API. Features city search, 5-day forecast, animated weather icons, and geolocation.</p>
+            <div class="project-links">
+              <a href="https://imaginative-sawine-34210b.netlify.app/" class="project-cta">Live Demo <i class="ri-arrow-right-up-line"></i></a>
+              <a href="https://github.com/Devrootx24/Aether-Weather.git" class="project-cta ghost">GitHub <i class="ri-github-line"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span>Services</span></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="ri-layout-masonry-line"></i>
+          </div>
+          <h3 class="service-title">Web Design</h3>
+          <p class="service-desc">
+            Crafting visually stunning, user-centered designs in Figma that translate seamlessly into polished, pixel-perfect interfaces your users will love.
+          </p>
+          <ul class="service-list">
+            <li><i class="ri-check-line"></i> UI/UX Design</li>
+            <li><i class="ri-check-line"></i> Wireframing & Prototyping</li>
+            <li><i class="ri-check-line"></i> Design Systems</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured reveal">
+          <div class="service-icon-wrap">
+            <i class="ri-code-s-slash-line"></i>
+          </div>
+          <span class="featured-badge">Most Popular</span>
+          <h3 class="service-title">Frontend Development</h3>
+          <p class="service-desc">
+            Building responsive, fast, and accessible frontends using modern HTML, CSS, and JavaScript — from landing pages to complex SPAs.
+          </p>
+          <ul class="service-list">
+            <li><i class="ri-check-line"></i> HTML / CSS / JavaScript</li>
+            <li><i class="ri-check-line"></i> Responsive Layouts</li>
+            <li><i class="ri-check-line"></i> Interactive Animations</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <i class="ri-speed-line"></i>
+          </div>
+          <h3 class="service-title">Website Optimization</h3>
+          <p class="service-desc">
+            Diagnosing and resolving performance bottlenecks to boost your Core Web Vitals, SEO scores, and overall user experience significantly.
+          </p>
+          <ul class="service-list">
+            <li><i class="ri-check-line"></i> Performance Audits</li>
+            <li><i class="ri-check-line"></i> SEO Optimization</li>
+            <li><i class="ri-check-line"></i> Accessibility (WCAG)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Have a project in mind or just want to say hello? I'm always open to discussing
+            new opportunities, creative ideas, or how we can work together.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-mail-line"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:rahul@example.com" class="contact-val">workwithrahul24@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-val">India (Remote Worldwide)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-time-line"></i></div>
+              <div>
+                <span class="contact-label">Response Time</span>
+                <span class="contact-val">Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Devrootx24" class="social-btn" aria-label="GitHub"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/devrootx/" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+            <a href="https://www.instagram.com/devrootx" class="social-btn" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.youtube.com/@DevrootX" class="social-btn" aria-label="youtube"><i class="ri-twitter-youtube-line"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="rahul@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Discussion" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            Send Message <i class="ri-send-plane-line"></i>
+          </button>
+          <p class="form-success" id="formSuccess" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo footer-logo">Rahul<span>.</span>Ali</a>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com/Devrootx24" aria-label="GitHub"><i class="ri-github-line"></i></a>
+          <a href="https://www.linkedin.com/in/devrootx/" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+          <a href="https://www.instagram.com/devrootx" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Rahul Ali. Crafted with <span class="heart">♥</span> in India.</p>
+        <p class="footer-credit">Designed & Developed by Rahul Ali</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
